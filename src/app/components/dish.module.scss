@@ -1,0 +1,43 @@
+@use '../colors';
+@use '../fonts';
+
+.card {
+  position: relative;
+  height: 250px;
+  background-color: colors.$white;
+  outline: 1px solid colors.$dun;
+  outline-offset: -10px;
+  border-radius: 0 45px 0 45px;
+  padding: 60px;
+
+  h1, h2, h3 {
+    font-family: fonts.$merriweather;
+    color: colors.$charcoal;
+    font-size: 42px;
+    margin-block-end: 0;
+  }
+
+  p {
+    font-family: fonts.$karla;
+    color: colors.$umber;
+    line-height: 1.4;
+  }
+
+  .text {
+    height: 250px;
+    overflow-y: scroll;
+  }
+}
+
+.pic {
+  position: relative;
+  z-index: 10;
+  display: block;
+  margin: 0 auto -110px;
+}
+
+@media (max-width: 900px) {
+  .card {
+    height: 200px;
+  }
+}
