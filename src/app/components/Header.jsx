@@ -11,8 +11,7 @@ const Header = () => {
             <h1>Genshin Dishes</h1>
             <p>
                 Explore Genshin Impact's culinary delights! Dive into the wide range of delicious food items,
-                each with its own unique flavor and effects. From spicy skewers to sweet treats, our virtual kitchen has it all.
-                Find the perfect dish to enhance your gameplay and enjoy the journey!
+                each with its own unique flavor and effects. Find the perfect dish to enhance your gameplay and enjoy the journey!
             </p>
         </div>
     </header>
