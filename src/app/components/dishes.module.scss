@@ -1,25 +1,56 @@
 @use '../colors';
+@use '../fonts';
 
 .container {
-    background-color: colors.$alabaster;
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 2vw;
-    padding: 2vw 8vw;
+  background-color: colors.$alabaster;
+  padding: 2vw 8vw;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2vw;
+}
+
+.buttons {
+  text-align: center;
+  padding: 2vw;
+
+  button {
+    background-color: colors.$white;
+    color: colors.$umber;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-family: fonts.$karla;
+    font-size: 1em;
+    border: 0;
+    outline: 1px solid colors.$white;
+    outline-offset: 5px;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.025);
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    }
+  }
 }
 
 @media (max-width: 1300px) {
-    .container {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 3vw;
-        padding: 4vw 8vw;
+  .container {
+    padding: 4vw 8vw;
+  }
 
-    }
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3vw;
+  }
 }
 
 @media (max-width: 900px) {
-    .container {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        gap: 1vh;
-    }
+  .grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1vh;
+  }
 }
