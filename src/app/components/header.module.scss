@@ -5,6 +5,7 @@
   height: 60vh;
   background-color: colors.$alabaster;
   position: relative;
+  overflow: hidden;
 
   .bgImage {
     width: 100%;
@@ -45,6 +46,10 @@
 }
 
 @media (max-width: 520px) {
+  .header {
+    height: 80vh;
+    max-height: 550px;
+  }
   .content {
     top: 0!important;
     margin: 8vw;

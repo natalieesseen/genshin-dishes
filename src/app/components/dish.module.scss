@@ -37,6 +37,10 @@
 
 @media (max-width: 900px) {
   .card {
-    height: 200px;
+    height: 150px;
+
+    .text {
+      height: 150px;
+    }
   }
 }

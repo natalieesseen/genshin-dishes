@@ -3,7 +3,7 @@
 
 .container {
   background-color: colors.$alabaster;
-  padding: 2vw 8vw;
+  padding: 2vw 8vw calc(6vw + 6px);
 }
 
 .grid {
@@ -14,7 +14,7 @@
 
 .buttons {
   text-align: center;
-  padding: 2vw;
+  padding-top: calc(6vw + 6px);
 
   button {
     background-color: colors.$white;
@@ -38,10 +38,6 @@
 }
 
 @media (max-width: 1300px) {
-  .container {
-    padding: 4vw 8vw;
-  }
-
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 3vw;
@@ -49,8 +45,16 @@
 }
 
 @media (max-width: 900px) {
+  .container {
+    padding: 2vw 8vw calc(8vw + 6px);
+  }
+
   .grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     gap: 1vh;
+  }
+
+  .buttons {
+    padding-top: calc(8vw + 6px);
   }
 }
