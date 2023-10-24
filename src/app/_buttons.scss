@@ -1,0 +1,20 @@
+@use './colors';
+@use './fonts';
+
+@mixin offsetBtn {
+  background-color: colors.$white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-family: fonts.$merriweather;
+  border: 0;
+  outline: 1px solid colors.$white;
+  outline-offset: 5px;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+}

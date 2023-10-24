@@ -1,0 +1,19 @@
+@use '../colors';
+@use '../fonts';
+@use '../buttons';
+
+.buttons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: -28px;
+  z-index: 100;
+
+  button {
+    @include buttons.offsetBtn;
+
+    background-color: colors.$alabaster;
+    color: colors.$umber;
+    outline: 1px solid colors.$alabaster;
+  }
+}

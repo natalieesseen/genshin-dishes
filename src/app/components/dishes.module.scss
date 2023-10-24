@@ -1,8 +1,9 @@
 @use '../colors';
 @use '../fonts';
+@use '../buttons';
 
 .container {
-  background-color: colors.$alabaster;
+  background-color: colors.$slate;
   padding: 2vw 8vw calc(6vw + 6px);
 }
 
@@ -17,23 +18,8 @@
   padding-top: calc(6vw + 6px);
 
   button {
-    background-color: colors.$white;
-    color: colors.$umber;
-    border-radius: 25px;
-    padding: 10px 20px;
-    font-family: fonts.$karla;
-    font-size: 1em;
-    border: 0;
-    outline: 1px solid colors.$white;
-    outline-offset: 5px;
-
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.025);
-      transition-property: all;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition-duration: 150ms;
-    }
+    @include buttons.offsetBtn;
+    color: colors.$charcoal;
   }
 }
 
