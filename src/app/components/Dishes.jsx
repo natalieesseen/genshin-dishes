@@ -29,6 +29,7 @@ const Dishes = () => {
             key={key}
             name={dish.name}
             description={dish.description}
+            recipe={dish.recipe}
             imgUrl={`https://api.genshin.dev/consumables/food/${key}`}
           />
         )}
